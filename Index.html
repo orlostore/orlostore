@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORLO - Coming Soon</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #1a3a52 0%, #2d5a7b 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        .logo {
+            width: 280px;
+            height: 280px;
+            margin: 0 auto 40px;
+            animation: fadeIn 1s ease-in;
+        }
+        
+        h1 {
+            color: #ffffff;
+            font-size: 3.5rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+            letter-spacing: 0.25em;
+            animation: fadeIn 1.2s ease-in;
+            text-transform: uppercase;
+        }
+        
+        .tagline {
+            color: #E76F51;
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            animation: fadeIn 1.4s ease-in;
+        }
+        
+        .email {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.1rem;
+            margin-top: 50px;
+            animation: fadeIn 1.6s ease-in;
+        }
+        
+        .email a {
+            color: #E76F51;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+        
+        .email a:hover {
+            border-bottom-color: #E76F51;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                width: 200px;
+                height: 200px;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+            }
+            
+            .email {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="ORLO Logo" class="logo">
+        
+        <h1>COMING SOON</h1>
+        <p class="tagline">We're preparing something special for you</p>
+        
+        <div class="email">
+            For inquiries: <a href="mailto:info@orlostore.com">info@orlostore.com</a>
+        </div>
+    </div>
+</body>
+</html>
